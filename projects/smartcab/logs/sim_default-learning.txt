@@ -1,0 +1,448 @@
+/-----------------------------------------
+| State-action rewards from Q-Learning
+\-----------------------------------------
+
+["left", {"light": "green", "right": null, "left": "right"}]
+ -- forward : 0.81
+ -- None : 0.00
+ -- right : 0.09
+ -- left : 0.00
+
+["left", {"light": "green", "right": "left", "left": "left"}]
+ -- forward : 0.08
+ -- None : -4.64
+ -- right : 0.00
+ -- left : -19.59
+
+["left", {"light": "red", "right": null, "left": "right"}]
+ -- forward : -10.20
+ -- None : 1.54
+ -- right : -0.17
+ -- left : -9.29
+
+["forward", {"light": "green", "right": null, "left": null}]
+ -- forward : 1.09
+ -- None : -4.42
+ -- right : 0.43
+ -- left : 0.44
+
+["right", {"light": "green", "right": "right", "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 1.22
+ -- left : 0.00
+
+["left", {"light": "green", "right": "right", "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 1.23
+
+["left", {"light": "green", "right": "right", "left": "left"}]
+ -- forward : -0.29
+ -- None : -5.97
+ -- right : 0.00
+ -- left : 0.00
+
+["right", {"light": "red", "right": "left", "left": "right"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.00
+ -- left : -10.95
+
+["forward", {"light": "green", "right": "left", "left": null}]
+ -- forward : 1.15
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 0.00
+
+["left", {"light": "red", "right": "left", "left": "left"}]
+ -- forward : -10.61
+ -- None : 1.24
+ -- right : -0.26
+ -- left : -9.01
+
+["left", {"light": "green", "right": "left", "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 1.69
+
+["left", {"light": "red", "right": "left", "left": null}]
+ -- forward : -10.70
+ -- None : 0.59
+ -- right : -0.23
+ -- left : -9.83
+
+["left", {"light": "green", "right": "forward", "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.03
+ -- left : 0.00
+
+["forward", {"light": "green", "right": "left", "left": "forward"}]
+ -- forward : 0.00
+ -- None : -4.69
+ -- right : 1.54
+ -- left : 0.00
+
+["right", {"light": "green", "right": "forward", "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 2.96
+ -- left : -0.11
+
+["left", {"light": "red", "right": "left", "left": "forward"}]
+ -- forward : -39.92
+ -- None : 1.84
+ -- right : -19.63
+ -- left : -40.25
+
+["right", {"light": "green", "right": "left", "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 2.44
+ -- left : -19.63
+
+["right", {"light": "red", "right": null, "left": "forward"}]
+ -- forward : -40.76
+ -- None : 0.49
+ -- right : -19.83
+ -- left : 0.00
+
+["forward", {"light": "red", "right": null, "left": "right"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 1.95
+ -- left : 0.00
+
+["left", {"light": "red", "right": "forward", "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : -20.42
+ -- left : -40.81
+
+["right", {"light": "red", "right": "left", "left": "forward"}]
+ -- forward : -40.48
+ -- None : 0.00
+ -- right : -20.06
+ -- left : -40.32
+
+["right", {"light": "green", "right": "right", "left": null}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 0.26
+
+["left", {"light": "green", "right": "right", "left": null}]
+ -- forward : -0.28
+ -- None : -5.44
+ -- right : 0.00
+ -- left : 1.32
+
+["forward", {"light": "red", "right": "forward", "left": null}]
+ -- forward : 0.00
+ -- None : 2.09
+ -- right : 0.00
+ -- left : 0.00
+
+["forward", {"light": "red", "right": "right", "left": null}]
+ -- forward : 0.00
+ -- None : 2.34
+ -- right : 0.00
+ -- left : 0.00
+
+["left", {"light": "green", "right": null, "left": "forward"}]
+ -- forward : -0.48
+ -- None : 0.00
+ -- right : 0.00
+ -- left : -20.65
+
+["forward", {"light": "red", "right": "left", "left": null}]
+ -- forward : -9.07
+ -- None : 1.77
+ -- right : 0.79
+ -- left : -10.24
+
+["forward", {"light": "green", "right": "forward", "left": "forward"}]
+ -- forward : 0.96
+ -- None : 0.00
+ -- right : -0.06
+ -- left : 0.00
+
+["left", {"light": "red", "right": "forward", "left": null}]
+ -- forward : -40.29
+ -- None : 1.19
+ -- right : -0.47
+ -- left : -40.25
+
+["right", {"light": "red", "right": "left", "left": null}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 2.33
+ -- left : -9.11
+
+["forward", {"light": "green", "right": "right", "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.00
+ -- left : -0.03
+
+["left", {"light": "red", "right": "forward", "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.53
+ -- left : -39.43
+
+["right", {"light": "red", "right": null, "left": "right"}]
+ -- forward : 0.00
+ -- None : -0.53
+ -- right : 0.00
+ -- left : 0.00
+
+["forward", {"light": "green", "right": "right", "left": null}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.40
+ -- left : 0.23
+
+["forward", {"light": "green", "right": "left", "left": "left"}]
+ -- forward : 2.30
+ -- None : 0.00
+ -- right : 0.43
+ -- left : -0.06
+
+["forward", {"light": "green", "right": "forward", "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.77
+ -- left : -20.46
+
+["forward", {"light": "red", "right": "left", "left": "forward"}]
+ -- forward : -40.93
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 0.00
+
+["left", {"light": "red", "right": "right", "left": "right"}]
+ -- forward : -9.65
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 0.00
+
+["right", {"light": "green", "right": null, "left": "forward"}]
+ -- forward : 0.54
+ -- None : -5.73
+ -- right : 1.29
+ -- left : -19.65
+
+["left", {"light": "green", "right": null, "left": null}]
+ -- forward : -0.26
+ -- None : -4.61
+ -- right : -0.80
+ -- left : -20.99
+
+["left", {"light": "green", "right": "forward", "left": null}]
+ -- forward : -0.13
+ -- None : 0.00
+ -- right : -0.28
+ -- left : 2.54
+
+["forward", {"light": "red", "right": "forward", "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : -20.18
+ -- left : 0.00
+
+["left", {"light": "green", "right": "left", "left": null}]
+ -- forward : 0.81
+ -- None : -5.48
+ -- right : 0.79
+ -- left : -19.53
+
+["left", {"light": "red", "right": "right", "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 1.10
+ -- left : 0.00
+
+["right", {"light": "red", "right": "forward", "left": null}]
+ -- forward : -39.42
+ -- None : 0.00
+ -- right : 0.00
+ -- left : -39.87
+
+["left", {"light": "red", "right": null, "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.17
+ -- left : -10.61
+
+["left", {"light": "red", "right": "left", "left": "right"}]
+ -- forward : 0.00
+ -- None : 2.32
+ -- right : 0.00
+ -- left : -9.41
+
+["right", {"light": "green", "right": "forward", "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 1.66
+ -- left : 0.00
+
+["forward", {"light": "green", "right": null, "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 0.51
+
+["forward", {"light": "red", "right": "right", "left": "left"}]
+ -- forward : 0.00
+ -- None : 1.23
+ -- right : 0.00
+ -- left : 0.00
+
+["forward", {"light": "red", "right": null, "left": "left"}]
+ -- forward : -10.48
+ -- None : 0.00
+ -- right : 1.73
+ -- left : 0.00
+
+["right", {"light": "green", "right": null, "left": "right"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 2.80
+ -- left : 0.00
+
+["right", {"light": "green", "right": "right", "left": "forward"}]
+ -- forward : 0.00
+ -- None : -5.18
+ -- right : 0.00
+ -- left : 0.00
+
+["right", {"light": "red", "right": "forward", "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 2.25
+ -- left : -40.54
+
+["left", {"light": "red", "right": null, "left": null}]
+ -- forward : -9.12
+ -- None : 1.32
+ -- right : 0.05
+ -- left : -9.10
+
+["left", {"light": "red", "right": null, "left": "forward"}]
+ -- forward : -39.18
+ -- None : 1.46
+ -- right : -20.43
+ -- left : -40.25
+
+["right", {"light": "green", "right": "left", "left": "forward"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 0.13
+
+["forward", {"light": "green", "right": "forward", "left": null}]
+ -- forward : 0.77
+ -- None : -5.67
+ -- right : 1.91
+ -- left : 0.00
+
+["right", {"light": "red", "right": "left", "left": "left"}]
+ -- forward : 0.00
+ -- None : 1.01
+ -- right : 0.00
+ -- left : 0.00
+
+["forward", {"light": "green", "right": null, "left": "right"}]
+ -- forward : 1.03
+ -- None : -4.49
+ -- right : 0.00
+ -- left : 0.00
+
+["right", {"light": "green", "right": null, "left": null}]
+ -- forward : 0.15
+ -- None : -4.52
+ -- right : 2.11
+ -- left : 0.75
+
+["forward", {"light": "green", "right": null, "left": "left"}]
+ -- forward : 2.67
+ -- None : 0.00
+ -- right : -0.13
+ -- left : 0.00
+
+["left", {"light": "red", "right": "forward", "left": "right"}]
+ -- forward : 0.00
+ -- None : 1.41
+ -- right : 0.00
+ -- left : 0.00
+
+["forward", {"light": "red", "right": "forward", "left": "left"}]
+ -- forward : -39.21
+ -- None : 0.00
+ -- right : 0.00
+ -- left : -39.74
+
+["right", {"light": "green", "right": "forward", "left": null}]
+ -- forward : -0.22
+ -- None : 0.00
+ -- right : 2.10
+ -- left : 0.00
+
+["right", {"light": "red", "right": null, "left": "left"}]
+ -- forward : -10.52
+ -- None : 0.10
+ -- right : 0.56
+ -- left : -9.54
+
+["forward", {"light": "red", "right": null, "left": null}]
+ -- forward : -9.58
+ -- None : 1.47
+ -- right : 0.20
+ -- left : -10.43
+
+["right", {"light": "red", "right": "right", "left": "right"}]
+ -- forward : 0.00
+ -- None : 0.72
+ -- right : 0.00
+ -- left : 0.00
+
+["forward", {"light": "red", "right": "left", "left": "left"}]
+ -- forward : 0.00
+ -- None : 0.00
+ -- right : 0.00
+ -- left : -10.57
+
+["right", {"light": "green", "right": "left", "left": null}]
+ -- forward : -0.65
+ -- None : 0.00
+ -- right : 1.10
+ -- left : -20.08
+
+["left", {"light": "green", "right": null, "left": "left"}]
+ -- forward : 1.05
+ -- None : 0.00
+ -- right : 0.00
+ -- left : 0.00
+
+["right", {"light": "green", "right": null, "left": "left"}]
+ -- forward : 1.10
+ -- None : -4.05
+ -- right : 2.66
+ -- left : 1.31
+
+["right", {"light": "red", "right": null, "left": null}]
+ -- forward : -10.36
+ -- None : 0.52
+ -- right : 1.56
+ -- left : -10.35
+
+["left", {"light": "red", "right": "right", "left": null}]
+ -- forward : -10.10
+ -- None : 2.31
+ -- right : 0.01
+ -- left : -10.99
+
