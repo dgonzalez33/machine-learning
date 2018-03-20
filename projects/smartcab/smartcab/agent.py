@@ -39,7 +39,7 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Update epsilon using a decay function of your choice
-        self.epsilon = self.epsilon*.99
+        self.epsilon = np.exp(-self.alpha*self.trials)
         # Update additional class parameters as needed
         # If 'testing' is True, set epsilon and alpha to 0
         if testing:
@@ -57,7 +57,9 @@ class LearningAgent(Agent):
         waypoint = self.planner.next_waypoint() # The next waypoint 
         inputs = self.env.sense(self)           # Visual input - intersection light and traffic
         deadline = self.env.get_deadline(self)  # Remaining deadline
-
+        # del(inputs['oncoming'])
+        del(inputs['right'])
+        del(inputs['left'])
         ########### 
         ## TO DO ##
         ###########
@@ -184,7 +186,7 @@ def run():
     #   learning   - set to True to force the driving agent to use Q-learning
     #    * epsilon - continuous value for the exploration factor, default is 1
     #    * alpha   - continuous value for the learning rate, default is 0.5
-    agent = env.create_agent(LearningAgent, epsilon = 1.0, alpha = .07)
+    agent = env.create_agent(LearningAgent, epsilon = 1.0, alpha = .05)
     
     ##############
     # Follow the driving agent
@@ -199,7 +201,7 @@ def run():
     #   display      - set to False to disable the GUI if PyGame is enabled
     #   log_metrics  - set to True to log trial and simulation results to /logs
     #   optimized    - set to True to change the default log file name
-    sim = Simulator(env, update_delay = 0.01, log_metrics = True, optimized = True)
+    sim = Simulator(env, update_delay = 0.01, log_metrics = True, optimized = False)
     
     ##############
     # Run the simulator
