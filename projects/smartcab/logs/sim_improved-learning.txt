@@ -3,146 +3,146 @@
 \-----------------------------------------
 
 ["forward", {"light": "green", "oncoming": "right"}]
- -- forward : 0.00
- -- None : -3.83
- -- right : 0.20
- -- left : -13.40
-
-["left", {"light": "red", "oncoming": "right"}]
- -- forward : 0.00
- -- None : 2.57
+ -- forward : 1.81
+ -- None : -3.47
  -- right : 0.00
  -- left : 0.00
 
-["forward", {"light": "red", "oncoming": "left"}]
+["left", {"light": "red", "oncoming": "right"}]
  -- forward : 0.00
- -- None : 1.28
- -- right : 0.26
- -- left : -36.98
+ -- None : 2.44
+ -- right : -0.16
+ -- left : -33.78
+
+["forward", {"light": "red", "oncoming": "left"}]
+ -- forward : -14.85
+ -- None : 2.41
+ -- right : -11.57
+ -- left : -16.11
 
 ["right", {"light": "red", "oncoming": "right"}]
- -- forward : 0.00
+ -- forward : -24.41
  -- None : 0.00
- -- right : 1.20
- -- left : -27.90
+ -- right : 1.98
+ -- left : -33.94
 
 ["left", {"light": "green", "oncoming": "right"}]
  -- forward : 0.00
  -- None : 0.00
- -- right : 0.00
- -- left : 0.00
+ -- right : -0.03
+ -- left : -11.82
 
 ["right", {"light": "green", "oncoming": null}]
- -- forward : 1.16
- -- None : -4.75
- -- right : 0.96
- -- left : 0.62
+ -- forward : 0.40
+ -- None : -3.01
+ -- right : 2.09
+ -- left : 0.33
 
 ["right", {"light": "red", "oncoming": "forward"}]
- -- forward : -9.72
- -- None : 0.00
- -- right : 1.60
- -- left : 0.00
+ -- forward : -6.47
+ -- None : 0.42
+ -- right : 1.09
+ -- left : -8.63
 
 ["forward", {"light": "green", "oncoming": "left"}]
- -- forward : 2.65
- -- None : 0.00
- -- right : 0.00
- -- left : 0.00
+ -- forward : 1.68
+ -- None : -3.03
+ -- right : 0.49
+ -- left : 0.38
 
 ["left", {"light": "green", "oncoming": null}]
- -- forward : 0.10
+ -- forward : 0.61
  -- None : -4.52
- -- right : 0.75
- -- left : 2.18
+ -- right : 0.40
+ -- left : 2.46
 
 ["left", {"light": "red", "oncoming": "left"}]
- -- forward : 0.00
- -- None : 1.30
- -- right : 1.28
- -- left : -27.55
+ -- forward : -9.33
+ -- None : 2.15
+ -- right : 0.25
+ -- left : -16.68
 
 ["forward", {"light": "green", "oncoming": "forward"}]
- -- forward : 1.34
+ -- forward : 0.00
  -- None : 0.00
- -- right : 0.00
- -- left : 0.00
+ -- right : 1.14
+ -- left : -17.11
 
 ["left", {"light": "green", "oncoming": "left"}]
- -- forward : 0.77
- -- None : -3.18
- -- right : 0.00
- -- left : 2.17
+ -- forward : 0.00
+ -- None : -2.79
+ -- right : 0.27
+ -- left : 1.71
 
 ["right", {"light": "green", "oncoming": "left"}]
- -- forward : 1.18
- -- None : 0.00
- -- right : 0.00
- -- left : 0.00
+ -- forward : 0.61
+ -- None : -4.52
+ -- right : 2.51
+ -- left : 1.01
 
 ["forward", {"light": "green", "oncoming": null}]
- -- forward : 2.48
- -- None : -3.38
- -- right : 0.01
- -- left : -0.11
+ -- forward : 1.67
+ -- None : -4.21
+ -- right : -0.04
+ -- left : 0.62
 
 ["forward", {"light": "red", "oncoming": "forward"}]
- -- forward : -7.51
- -- None : 2.45
- -- right : 0.00
- -- left : -7.27
+ -- forward : -11.87
+ -- None : 1.67
+ -- right : 0.04
+ -- left : -15.96
 
 ["left", {"light": "red", "oncoming": "forward"}]
- -- forward : 0.00
- -- None : 2.18
- -- right : 0.04
- -- left : -30.19
+ -- forward : -15.36
+ -- None : 1.44
+ -- right : 0.00
+ -- left : -9.55
 
 ["forward", {"light": "red", "oncoming": null}]
- -- forward : 0.00
- -- None : 2.66
- -- right : 0.70
- -- left : -8.82
+ -- forward : -8.80
+ -- None : 1.98
+ -- right : 0.25
+ -- left : 0.00
 
 ["right", {"light": "green", "oncoming": "right"}]
- -- forward : -0.05
- -- None : -3.56
- -- right : 0.00
+ -- forward : 0.63
+ -- None : -4.66
+ -- right : 1.37
  -- left : 0.00
 
 ["left", {"light": "green", "oncoming": "forward"}]
- -- forward : -0.22
- -- None : -3.22
- -- right : 0.24
- -- left : 0.00
+ -- forward : 0.06
+ -- None : -4.33
+ -- right : 0.25
+ -- left : -12.34
 
 ["right", {"light": "green", "oncoming": "forward"}]
- -- forward : 0.00
- -- None : 0.00
- -- right : 1.61
+ -- forward : 0.77
+ -- None : -4.50
+ -- right : 0.00
  -- left : 0.00
 
 ["left", {"light": "red", "oncoming": null}]
- -- forward : -8.59
- -- None : 2.03
- -- right : -3.80
- -- left : -15.59
+ -- forward : -9.31
+ -- None : 1.17
+ -- right : -0.22
+ -- left : -10.58
 
 ["right", {"light": "red", "oncoming": null}]
  -- forward : -10.26
- -- None : 1.10
- -- right : -14.30
- -- left : -18.56
+ -- None : 0.28
+ -- right : -0.97
+ -- left : -9.36
 
 ["right", {"light": "red", "oncoming": "left"}]
- -- forward : 0.00
- -- None : 0.00
- -- right : 2.51
- -- left : 0.00
+ -- forward : -14.90
+ -- None : 0.86
+ -- right : -11.92
+ -- left : -6.38
 
 ["forward", {"light": "red", "oncoming": "right"}]
- -- forward : 0.00
- -- None : 1.97
- -- right : -13.27
- -- left : -28.54
+ -- forward : -6.54
+ -- None : 1.41
+ -- right : 0.00
+ -- left : -24.35
 
